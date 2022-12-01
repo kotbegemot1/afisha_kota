@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'afisha_main',
 ]
 
 MIDDLEWARE = [
@@ -103,13 +104,21 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_TZ = True
+
+SHORT_DATE_FORMAT = 'j.m.Y'
+SHORT_DATETIME_FORMAT = 'j.m.Y H:i:s'
+DATE_FORMAT = 'J E Y'
+DATETIME_FORMAT = 'J E Y H:i:s'
+TIME_FORMAT = 'H:i:s'
+DATE_INPUT_FORMATS = ['%d.%m.%Y']
+DATETIME_INPUT_FORMATS = ['%d.%m.%Y %H:%M:%S']
 
 
 # Static files (CSS, JavaScript, Images)
